@@ -47,9 +47,17 @@ We need to include the app in the  `settings.py`  file by adding  `'main.apps.Ma
 `pip install djangify`**
 after installing the package just run the following command from your shell inside the MyProject directory:
 
-`djangify -d main/templates/main`
+`djangify -d main/template/main`
 
 the tool will create a folder "Modified_files" in which there will be HTML with every CSS, JS reference converted to the django compatible reference, replacing the index.html in the main/templates/main/ with the same named file in main/templates/main/Modified_files/ we can easily see the same output as above.
+## Migrating the changes and running server
+
+ 
+
+ 
+
+    python manage.py migrate
+    python manage.py runserver
 Please feel free to drop a message at [Ohuru](https://ohuru.tech/) in order to avail various development services offered by us.
 Sources:
 https://dev.to/amartyadev/converting-any-html-template-into-a-django-template-25ob
